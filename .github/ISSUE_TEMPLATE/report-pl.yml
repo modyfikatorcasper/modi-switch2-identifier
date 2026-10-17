@@ -46,70 +46,49 @@ body:
       label: "Zestaw / bundle"
     validations:
       required: false
-  - type: dropdown
+  - type: input
     id: battery
     attributes:
       label: "Konstrukcja baterii — oględziny"
-      description: "unknown = nieustalona; earlier = potwierdzona wcześniejsza; user-replaceable = potwierdzona wymieniana przez użytkownika. Nie przepisuj wniosku z prefiksu jako oględzin."
-      options:
-        - "unknown"
-        - "earlier"
-        - "user-replaceable"
-      default: 0
+      description: "unknown = nieustalona; earlier = potwierdzona wcześniejsza; user-replaceable = potwierdzona wymieniana przez użytkownika. Nie przepisuj wniosku z prefiksu jako oględzin.\n\nDozwolone wartości: unknown, earlier, user-replaceable"
+      value: "unknown"
+      placeholder: "unknown / earlier / user-replaceable"
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: panel
     attributes:
       label: "Oznaczenie panelu"
-      description: "unread = nieodczytane; other = inne, wpisz w uwagach. Bez czytelnego zdjęcia oznaczenie pozostaje niepotwierdzone."
-      options:
-        - "unread"
-        - "ZD079KA-03A"
-        - "LS079T1SX10P"
-        - "LS0DAS7081"
-        - "other"
-      default: 0
+      description: "unread = nieodczytane; other = inne, wpisz w uwagach. Bez czytelnego zdjęcia oznaczenie pozostaje niepotwierdzone.\n\nDozwolone wartości: unread, ZD079KA-03A, LS079T1SX10P, LS0DAS7081, other"
+      value: "unread"
+      placeholder: "unread / ZD079KA-03A / LS079T1SX10P / LS0DAS7081 / other"
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: ribbon_print
     attributes:
       label: "Nadruk na szerokiej taśmie"
-      description: "unknown = nieustalone; present = obecny; absent = brak; unreadable = nieczytelny; unresolved = nierozstrzygnięte."
-      options:
-        - "unknown"
-        - "present"
-        - "absent"
-        - "unreadable"
-        - "unresolved"
-      default: 0
+      description: "unknown = nieustalone; present = obecny; absent = brak; unreadable = nieczytelny; unresolved = nierozstrzygnięte.\n\nDozwolone wartości: unknown, present, absent, unreadable, unresolved"
+      value: "unknown"
+      placeholder: "unknown / present / absent / unreadable / unresolved"
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: left_wing
     attributes:
       label: "Lewe skrzydełko"
-      description: "Tył modułu, oznaczenie ustawione czytelnie. present = obecne; absent = brak; unknown = nieustalone; unresolved = nierozstrzygnięte. Ta cecha nie identyfikuje producenta."
-      options:
-        - "unknown"
-        - "present"
-        - "absent"
-        - "unresolved"
-      default: 0
+      description: "Tył modułu, oznaczenie ustawione czytelnie. present = obecne; absent = brak; unknown = nieustalone; unresolved = nierozstrzygnięte. Ta cecha nie identyfikuje producenta.\n\nDozwolone wartości: unknown, present, absent, unresolved"
+      value: "unknown"
+      placeholder: "unknown / present / absent / unresolved"
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: right_wing
     attributes:
       label: "Prawe skrzydełko"
-      description: "Ta sama orientacja co przy lewym skrzydełku."
-      options:
-        - "unknown"
-        - "present"
-        - "absent"
-        - "unresolved"
-      default: 0
+      description: "Ta sama orientacja co przy lewym skrzydełku.\n\nDozwolone wartości: unknown, present, absent, unresolved"
+      value: "unknown"
+      placeholder: "unknown / present / absent / unresolved"
     validations:
       required: true
   - type: input
@@ -133,28 +112,22 @@ body:
       description: "Tylko jeśli widoczny podczas serwisu. Nie rozbieraj sprawnej konsoli wyłącznie dla zgłoszenia."
     validations:
       required: false
-  - type: dropdown
+  - type: input
     id: screen_history
     attributes:
       label: "Historia ekranu"
-      description: "unknown = historia nieznana; factory = fabryczny; replaced = wymieniony."
-      options:
-        - "unknown"
-        - "factory"
-        - "replaced"
-      default: 0
+      description: "unknown = historia nieznana; factory = fabryczny; replaced = wymieniony.\n\nDozwolone wartości: unknown, factory, replaced"
+      value: "unknown"
+      placeholder: "unknown / factory / replaced"
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: board_history
     attributes:
       label: "Historia płyty"
-      description: "unknown = historia nieznana; factory = fabryczna; replaced = wymieniona."
-      options:
-        - "unknown"
-        - "factory"
-        - "replaced"
-      default: 0
+      description: "unknown = historia nieznana; factory = fabryczna; replaced = wymieniona.\n\nDozwolone wartości: unknown, factory, replaced"
+      value: "unknown"
+      placeholder: "unknown / factory / replaced"
     validations:
       required: true
   - type: textarea

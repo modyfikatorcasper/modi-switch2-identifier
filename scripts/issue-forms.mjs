@@ -26,9 +26,14 @@ for(const lang of ['pl','en']) {
   const pl=lang==='pl';
   const lines=[`name: ${quote(pl?'Dodaj obserwację Nintendo Switch 2':'Report a Nintendo Switch 2 observation')}`,`description: ${quote(pl?'Zgłoszenie właściciela lub serwisanta. Weryfikacja jest ręczna.':'Owner or technician report. Verification is manual.')}`,`title: "[Report] "`,'body:', '  - type: markdown', '    attributes:',`      value: ${quote(pl?'## MODI / Modyfikator / Modibox\nTylko Nintendo Switch 2. To zgłoszenie będzie publiczne. Nie podawaj pełnego numeru. Nie rozbieraj sprawnej konsoli wyłącznie dla zgłoszenia. Wysłanie Issue nie dodaje automatycznie rekordu do bazy.':'## MODI / Modyfikator / Modibox\nNintendo Switch 2 only. This report will be public. Never include a full serial. Do not open a working console solely to report. Submitting an Issue does not automatically add a database record.')}`];
   for(const [type,id,labelPL,labelEN,required,descPL,descEN,values] of fields) {
-    lines.push(`  - type: ${type}`,`    id: ${id}`,'    attributes:',`      label: ${quote(pl?labelPL:labelEN)}`);
-    if(descPL)lines.push(`      description: ${quote(pl?descPL:descEN)}`);
-    if(values) {lines.push('      options:',...values.map(v=>'        - '+quote(v)),'      default: 0');}
+    // GitHub reliably prefills custom text fields by ID. Dropdown URL values
+    // are not consistently supported; the website still offers dropdowns.
+    lines.push(`  - type: ${type==='dropdown'?'input':type}`,`    id: ${id}`,'    attributes:',`      label: ${quote(pl?labelPL:labelEN)}`);
+    if(descPL)lines.push(`      description: ${quote((pl?descPL:descEN)+(values?'\n\n'+(pl?'Dozwolone wartości: ':'Allowed values: ')+values.join(', '):''))}`);
+    if(values) {
+      lines.push(`      value: ${quote(values[0])}`,`      placeholder: ${quote(values.join(' / '))}`);
+      if(!descPL)lines.push(`      description: ${quote((pl?'Dozwolone wartości: ':'Allowed values: ')+values.join(', '))}`);
+    }
     lines.push('    validations:',`      required: ${required}`);
   }
   lines.push('  - type: checkboxes','    id: consent','    attributes:',`      label: ${quote(pl?'Prywatność i status zgłoszenia':'Privacy and report status')}`,'      options:',`        - label: ${quote(pl?'Rozumiem, że zgłoszenie jest publiczne. Zamaskowałem numery na zdjęciach i usunąłem dane osobowe. Weryfikacja nie jest automatyczna.':'I understand this report is public. I have masked serials in photos and removed personal data. Verification is not automatic.')}`,'          required: true');

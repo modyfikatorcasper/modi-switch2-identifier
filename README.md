@@ -2,7 +2,7 @@
 
 ![MODI Diagnostic Lab](assets/modi-logo.svg)
 
-[GitHub](https://github.com/modyfikatorcasper/modi-switch2-identifier) · [Branding / Identyfikacja](docs/BRANDING.md)
+[Wersja polska](https://modyfikatorcasper.github.io/modi-switch2-identifier/?lang=pl) · [English](https://modyfikatorcasper.github.io/modi-switch2-identifier/?lang=en) · [GitHub](https://github.com/modyfikatorcasper/modi-switch2-identifier) · [Branding / Identyfikacja](docs/BRANDING.md)
 
 **Modyfikator / Modibox · tylko Nintendo Switch 2 / Nintendo Switch 2 only**
 
@@ -82,6 +82,8 @@ Liczymy **zgłoszenia**, nie niezależne konsole. Maska nie jest unikalnym ident
 
 Formularze są już wygenerowane. Edytuj `scripts/issue-forms.mjs`, a potem uruchom `node scripts/issue-forms.mjs`, aby odtworzyć obie wersje. Formularze mogą mieć różne etykiety PL/EN, ale wspólne ID pól i wartości techniczne, dzięki czemu link przekazuje spójne dane. Testy nie łączą się z siecią i nie wysyłają Issue.
 
+Strona udostępnia listy wyboru. Po przejściu do GitHub wybrane wartości trafiają do pól tekstowych o tych samych ID, z opisanymi wartościami dozwolonymi. GitHub nie przenosi niezawodnie wartości list przez URL; pola tekstowe zachowują pełny szkic. Sprawdź je przed wysłaniem.
+
 ## English
 
 ### Run locally
@@ -105,6 +107,8 @@ Open the printed HTTP URL, normally `http://127.0.0.1:4173`. Do not use `file://
 5. Read the real published URL from the deployment output or Pages settings.
 
 The workflow inserts the actual `GITHUB_REPOSITORY` into the built configuration, including for custom domains. For another deployment method, set `githubRepository` in `data/config.json` to your actual `owner/repository`. When unset, standard `*.github.io` URLs are detected; localhost offers draft download with an explicit configuration notice. `npm run build` produces `dist/`; `node scripts/serve.mjs --dist` previews it. Relative URLs support project Pages subpaths.
+
+The website offers dropdowns. Their selected values transfer to matching text fields in GitHub, with the allowed values documented. GitHub dropdown URL prefills are not reliable; text fields preserve the complete draft. Review them before submitting.
 
 ### Evidence and operation
 

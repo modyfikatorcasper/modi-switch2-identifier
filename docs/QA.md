@@ -6,7 +6,11 @@
 
 **14/14 tests passed**, data validation and the `dist/` build succeeded. Browser checks covered full-serial masking, unknown lookup, empty filtered results, record details, PL/EN switching with form values retained and a no-photo local draft. The draft also redacted the test serial in notes; the dataset was unchanged. Both external reference photos loaded. The mobile layout was checked at 390 × 844 with no document-level horizontal overflow and a separately scrollable table.
 
-Nie opublikowano strony ani Issue: nie wskazano docelowego repozytorium. Nie potwierdzono wykonania workflow na GitHub ani zdalnego otwarcia formularza w tym repozytorium. Przygotowano rzeczywiste pliki formularzy i workflow oraz przetestowano generowanie bezpiecznego linku lokalnie. / No site or Issue was published because no target repository was supplied. Remote workflow execution and Issue Form opening in that repository remain to be verified after deployment. Actual form/workflow files are included, and safe link generation was tested locally.
+## Publikacja — 2026-10-17 / Publication
+
+Projekt opublikowano w [modyfikatorcasper/modi-switch2-identifier](https://github.com/modyfikatorcasper/modi-switch2-identifier). [Pierwsze wdrożenie GitHub Pages](https://github.com/modyfikatorcasper/modi-switch2-identifier/actions/runs/39036701407) zakończyło się sukcesem, a [strona](https://modyfikatorcasper.github.io/modi-switch2-identifier/) została otwarta i sprawdzona w przeglądarce. Logo i faviconę ujednolicono z MODI JB CHECKER; pochodzenie opisuje `BRANDING.md`. Sprawdzono otwarcie rzeczywistego publicznego formularza z zamaskowanym numerem i krajem zakupu. Nie wysłano testowego Issue. Ze względu na niepewne przenoszenie list wyboru przez GitHub, docelowe formularze używają pól tekstowych dla wartości kategorii; listy na stronie pozostają bez zmian.
+
+The project was published to the linked repository. The first Pages workflow succeeded, and the live site was inspected in a browser. The logo/favicon follow MODI JB CHECKER, with provenance in `BRANDING.md`. The real public Issue Form was opened with a masked serial and purchase country; no test Issue was submitted. Category values use text fields in the GitHub form because dropdown URL prefills are unreliable; the website retains dropdown controls.
 
 ## Testy automatyczne / Automated checks
 

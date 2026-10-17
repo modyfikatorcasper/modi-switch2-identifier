@@ -46,70 +46,49 @@ body:
       label: "Bundle"
     validations:
       required: false
-  - type: dropdown
+  - type: input
     id: battery
     attributes:
       label: "Battery construction — inspection"
-      description: "unknown; earlier = physically confirmed earlier construction; user-replaceable = physically confirmed user-replaceable construction. A prefix inference is not an inspection."
-      options:
-        - "unknown"
-        - "earlier"
-        - "user-replaceable"
-      default: 0
+      description: "unknown; earlier = physically confirmed earlier construction; user-replaceable = physically confirmed user-replaceable construction. A prefix inference is not an inspection.\n\nAllowed values: unknown, earlier, user-replaceable"
+      value: "unknown"
+      placeholder: "unknown / earlier / user-replaceable"
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: panel
     attributes:
       label: "Panel marking"
-      description: "unread = not read; other = specify in notes. A marking is unconfirmed without a legible photo."
-      options:
-        - "unread"
-        - "ZD079KA-03A"
-        - "LS079T1SX10P"
-        - "LS0DAS7081"
-        - "other"
-      default: 0
+      description: "unread = not read; other = specify in notes. A marking is unconfirmed without a legible photo.\n\nAllowed values: unread, ZD079KA-03A, LS079T1SX10P, LS0DAS7081, other"
+      value: "unread"
+      placeholder: "unread / ZD079KA-03A / LS079T1SX10P / LS0DAS7081 / other"
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: ribbon_print
     attributes:
       label: "Wide ribbon print"
-      description: "Use only what you can document."
-      options:
-        - "unknown"
-        - "present"
-        - "absent"
-        - "unreadable"
-        - "unresolved"
-      default: 0
+      description: "Use only what you can document.\n\nAllowed values: unknown, present, absent, unreadable, unresolved"
+      value: "unknown"
+      placeholder: "unknown / present / absent / unreadable / unresolved"
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: left_wing
     attributes:
       label: "Left wing"
-      description: "Back of module, marking upright. This feature does not identify the manufacturer."
-      options:
-        - "unknown"
-        - "present"
-        - "absent"
-        - "unresolved"
-      default: 0
+      description: "Back of module, marking upright. This feature does not identify the manufacturer.\n\nAllowed values: unknown, present, absent, unresolved"
+      value: "unknown"
+      placeholder: "unknown / present / absent / unresolved"
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: right_wing
     attributes:
       label: "Right wing"
-      description: "Same orientation as for the left wing."
-      options:
-        - "unknown"
-        - "present"
-        - "absent"
-        - "unresolved"
-      default: 0
+      description: "Same orientation as for the left wing.\n\nAllowed values: unknown, present, absent, unresolved"
+      value: "unknown"
+      placeholder: "unknown / present / absent / unresolved"
     validations:
       required: true
   - type: input
@@ -133,28 +112,22 @@ body:
       description: "Only if visible during service. Do not open a working console solely to report."
     validations:
       required: false
-  - type: dropdown
+  - type: input
     id: screen_history
     attributes:
       label: "Screen history"
-      description: "unknown = history unknown; factory = factory-installed; replaced = replaced."
-      options:
-        - "unknown"
-        - "factory"
-        - "replaced"
-      default: 0
+      description: "unknown = history unknown; factory = factory-installed; replaced = replaced.\n\nAllowed values: unknown, factory, replaced"
+      value: "unknown"
+      placeholder: "unknown / factory / replaced"
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: board_history
     attributes:
       label: "Motherboard history"
-      description: "unknown = history unknown; factory = factory-installed; replaced = replaced."
-      options:
-        - "unknown"
-        - "factory"
-        - "replaced"
-      default: 0
+      description: "unknown = history unknown; factory = factory-installed; replaced = replaced.\n\nAllowed values: unknown, factory, replaced"
+      value: "unknown"
+      placeholder: "unknown / factory / replaced"
     validations:
       required: true
   - type: textarea
