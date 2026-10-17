@@ -4,7 +4,7 @@ title: "[Report] "
 body:
   - type: markdown
     attributes:
-      value: "## MODI / Modyfikator / Modibox\nNintendo Switch 2 only. This report will be public. Never include a full serial. Do not open a working console solely to report. Submitting an Issue does not automatically add a database record."
+      value: "## MODI / Modyfikator89\nNintendo Switch 2 only. This report will be public. Never include a full serial. Do not open a working console solely to report. Submitting an Issue does not automatically add a database record."
   - type: input
     id: serial
     attributes:

@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Evidence-led Nintendo Switch 2 model and display research database",
-  "engines": { "node": ">=22" },
+  "description": "Nintendo Switch 2 Screen Identifier — community display research by Modyfikator89",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "test": "node --test tests/*.test.mjs",
     "validate": "node scripts/validate.mjs",

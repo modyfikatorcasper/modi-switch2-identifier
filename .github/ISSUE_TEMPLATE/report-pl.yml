@@ -4,7 +4,7 @@ title: "[Report] "
 body:
   - type: markdown
     attributes:
-      value: "## MODI / Modyfikator / Modibox\nTylko Nintendo Switch 2. To zgłoszenie będzie publiczne. Nie podawaj pełnego numeru. Nie rozbieraj sprawnej konsoli wyłącznie dla zgłoszenia. Wysłanie Issue nie dodaje automatycznie rekordu do bazy."
+      value: "## MODI / Modyfikator89\nTylko Nintendo Switch 2. To zgłoszenie będzie publiczne. Nie podawaj pełnego numeru. Nie rozbieraj sprawnej konsoli wyłącznie dla zgłoszenia. Wysłanie Issue nie dodaje automatycznie rekordu do bazy."
   - type: input
     id: serial
     attributes:

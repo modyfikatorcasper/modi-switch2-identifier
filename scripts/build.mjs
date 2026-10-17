@@ -5,7 +5,7 @@ import {toCSV} from '../assets/core.js';
 const root=fileURLToPath(new URL('..',import.meta.url));
 const out=path.join(root,'dist');
 await mkdir(out,{recursive:true});
-for(const entry of ['index.html','.nojekyll','assets','data','docs','README.md','LICENSE']) await cp(path.join(root,entry),path.join(out,entry),{recursive:true});
+for(const entry of ['index.html','.nojekyll','sitemap.xml','assets','data','docs','README.md','LICENSE']) await cp(path.join(root,entry),path.join(out,entry),{recursive:true});
 const config=JSON.parse(await readFile(path.join(root,'data/config.json'),'utf8'));
 if(process.env.GITHUB_REPOSITORY)config.githubRepository=process.env.GITHUB_REPOSITORY;
 await writeFile(path.join(out,'data/config.json'),JSON.stringify(config,null,2)+'\n');

@@ -28,11 +28,14 @@
     "accessedAt": "2026-10-17"
   },
   {
-    "id": "modibox-seed",
-    "title": "Modibox / obserwacja serwisowa",
+    "id": "modyfikator89-seed",
+    "title": "Modyfikator89 / obserwacja serwisowa",
     "url": null,
     "kind": "user-provided-service-observation",
     "accessedAt": "2026-10-17",
-    "note": {"pl": "Dane przekazane przez autora projektu. Brak dołączonych zdjęć, daty serwisu i publicznego odnośnika.", "en": "Project author's supplied observations. No photos, service date or public permalink were supplied."}
+    "note": {
+      "pl": "Obserwacje autora projektu, uzupełnione jego wyjaśnieniem: para opisywana jako V1/V2 ma ten sam rodzaj ekranu o pierwotnej konstrukcji. Brak dołączonych zdjęć i publicznego odnośnika.",
+      "en": "Project author’s observations, clarified by the author: the pair described as V1/V2 has the same original-style screen assembly. No linked photos or public permalink supplied."
+    }
   }
 ]

@@ -22,8 +22,8 @@
     }
   ],
   "constraints": [
-    {"id": "no-serial-screen-rule", "sourceIds": ["modibox-seed", "npw-panels"], "rationale": {"pl": "Brak zweryfikowanej reguły numer seryjny → panel. Reguły baterii nie służą do przewidywania ekranu.", "en": "No verified serial → panel rule. Battery rules must never predict the display."}},
-    {"id": "wings-unresolved", "sourceIds": ["modibox-seed", "npw-panels"], "rationale": {"pl": "Sprzeczny opis skrzydełek i niejednolita orientacja zdjęć nie pozwalają przypisać producenta. Zapisuj lewą i prawą stronę osobno.", "en": "Conflicting wing descriptions and inconsistent image orientation do not identify the manufacturer. Record left and right separately."}},
-    {"id": "marking-same-unit", "sourceIds": ["modibox-seed"], "rationale": {"pl": "Potwierdzenie modelu wymaga czytelnego oznaczenia i zdjęć powiązanych z tym samym egzemplarzem.", "en": "Model confirmation requires a legible marking and photos linked to the same unit."}}
+    {"id": "no-serial-screen-rule", "sourceIds": ["modyfikator89-seed", "npw-panels"], "rationale": {"pl": "Brak zweryfikowanej reguły numer seryjny → panel. Reguły baterii nie służą do przewidywania ekranu.", "en": "No verified serial → panel rule. Battery rules must never predict the display."}},
+    {"id": "wings-unresolved", "sourceIds": ["modyfikator89-seed", "npw-panels"], "rationale": {"pl": "Sprzeczny opis skrzydełek i niejednolita orientacja zdjęć nie pozwalają przypisać producenta. Zapisuj lewą i prawą stronę osobno.", "en": "Conflicting wing descriptions and inconsistent image orientation do not identify the manufacturer. Record left and right separately."}},
+    {"id": "marking-same-unit", "sourceIds": ["modyfikator89-seed"], "rationale": {"pl": "Potwierdzenie modelu wymaga czytelnego oznaczenia i zdjęć powiązanych z tym samym egzemplarzem.", "en": "Model confirmation requires a legible marking and photos linked to the same unit."}}
   ]
 }

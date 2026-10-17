@@ -2,7 +2,7 @@
 
 The header and footer reuse the **M /** framed mark and **MODI DIAGNOSTIC LAB** lockup from [MODI JB CHECKER](https://github.com/modyfikatorcasper/modi-jb-checker/blob/main/index.html), together with its original favicon. The shared accent is `#b2f85b`, on `#0a0d0b`. This matches the existing MODI diagnostic-tool identity rather than introducing another mark.
 
-Nagłówek i stopka wykorzystują obramowany znak **M /** oraz układ **MODI DIAGNOSTIC LAB** z projektu [MODI JB CHECKER](https://github.com/modyfikatorcasper/modi-jb-checker/blob/main/index.html), razem z jego oryginalną faviconą. Wspólny akcent to `#b2f85b`, na tle `#0a0d0b`. Autorstwo projektu pozostaje Modyfikator / Modibox.
+Nagłówek i stopka wykorzystują obramowany znak **M /** oraz układ **MODI DIAGNOSTIC LAB** z projektu [MODI JB CHECKER](https://github.com/modyfikatorcasper/modi-jb-checker/blob/main/index.html), razem z jego oryginalną faviconą. Wspólny akcent to `#b2f85b`, na tle `#0a0d0b`. Autorstwo projektu pozostaje Modyfikator89.
 
 Source references / Źródła:
 

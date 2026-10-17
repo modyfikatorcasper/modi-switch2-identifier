@@ -6,7 +6,9 @@
       "id": "MODI-0001",
       "serialFragment": "HLE400924",
       "serialMasked": "HLE400924****",
-      "sourceIds": ["modibox-seed"],
+      "sourceIds": [
+        "modyfikator89-seed"
+      ],
       "issueUrl": null,
       "consoleModel": null,
       "printCode": null,
@@ -16,19 +18,34 @@
       "batteryObserved": "unknown",
       "panelModel": null,
       "assemblyStyle": "original-style",
-      "evidenceStatuses": ["unverified", "screen-unknown"],
+      "evidenceStatuses": [
+        "unverified",
+        "screen-unknown"
+      ],
       "screenHistory": "unknown",
       "boardHistory": "unknown",
-      "features": {"wideRibbonPrint": "unknown", "leftWing": "unresolved", "rightWing": "unresolved", "ribbonTip": null, "smallConnector": null, "underBoardRoute": null},
+      "features": {
+        "wideRibbonPrint": "unknown",
+        "leftWing": "unresolved",
+        "rightWing": "unresolved",
+        "ribbonTip": null,
+        "smallConnector": null,
+        "underBoardRoute": null
+      },
       "evidence": [],
       "duplicateReview": "not-reviewed",
-      "notes": {"pl": "Modibox opisuje ekran o pierwotnej konstrukcji w egzemplarzu HLE. original-style assembly, panel marking unverified. Bez zdjęć nie potwierdzamy modelu ani cech taśmy. Konstrukcja baterii wynika z prefiksu, nie z oględzin tego rekordu.", "en": "Modibox reports an original-style screen in an HLE unit. original-style assembly, panel marking unverified. No photos confirm the panel model or ribbon features. Battery construction is prefix-derived, not inspected for this report."}
+      "notes": {
+        "pl": "Modyfikator89 zgłasza ten sam rodzaj ekranu o pierwotnej konstrukcji w tej konsoli i w HAE109492****. Autor opisuje tę parę jako V1 i V2; przypisanie etykiety do tego fragmentu nie zostało jeszcze ustalone. original-style assembly, panel marking unverified. Obserwacja autora bez dołączonych zdjęć; nie potwierdzamy dokładnego modelu panelu ani cech taśmy.",
+        "en": "Modyfikator89 reports the same original-style screen assembly in this console and HAE109492****. The author describes this pair as V1 and V2; the label for this fragment has not yet been established. original-style assembly, panel marking unverified. Author-supplied observation without linked photos; the exact panel model and ribbon features remain unconfirmed."
+      }
     },
     {
       "id": "MODI-0002",
       "serialFragment": "HAE109492",
       "serialMasked": "HAE109492****",
-      "sourceIds": ["modibox-seed"],
+      "sourceIds": [
+        "modyfikator89-seed"
+      ],
       "issueUrl": null,
       "consoleModel": null,
       "printCode": null,
@@ -37,14 +54,27 @@
       "bundle": null,
       "batteryObserved": "unknown",
       "panelModel": null,
-      "assemblyStyle": "unknown",
-      "evidenceStatuses": ["unverified", "screen-unknown"],
+      "assemblyStyle": "original-style",
+      "evidenceStatuses": [
+        "unverified",
+        "screen-unknown"
+      ],
       "screenHistory": "unknown",
       "boardHistory": "unknown",
-      "features": {"wideRibbonPrint": "unknown", "leftWing": "unresolved", "rightWing": "unresolved", "ribbonTip": null, "smallConnector": null, "underBoardRoute": null},
+      "features": {
+        "wideRibbonPrint": "unknown",
+        "leftWing": "unresolved",
+        "rightWing": "unresolved",
+        "ribbonTip": null,
+        "smallConnector": null,
+        "underBoardRoute": null
+      },
       "evidence": [],
       "duplicateReview": "not-reviewed",
-      "notes": {"pl": "Przekazany fragment numeru. Nie dostarczono przypisanych temu egzemplarzowi zdjęć ani jednoznacznego opisu ekranu. Model panelu, cechy konstrukcyjne i historia części pozostają nieznane.", "en": "Supplied serial fragment. No photos or unambiguous display description were linked to this unit. Panel model, construction features and parts history remain unknown."}
+      "notes": {
+        "pl": "Modyfikator89 zgłasza ten sam rodzaj ekranu o pierwotnej konstrukcji w tej konsoli i w HLE400924****. Autor opisuje tę parę jako V1 i V2; przypisanie etykiety do tego fragmentu nie zostało jeszcze ustalone. original-style assembly, panel marking unverified. Obserwacja autora bez dołączonych zdjęć; nie potwierdzamy dokładnego modelu panelu ani cech taśmy.",
+        "en": "Modyfikator89 reports the same original-style screen assembly in this console and HLE400924****. The author describes this pair as V1 and V2; the label for this fragment has not yet been established. original-style assembly, panel marking unverified. Author-supplied observation without linked photos; the exact panel model and ribbon features remain unconfirmed."
+      }
     }
   ]
 }

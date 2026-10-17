@@ -1,12 +1,12 @@
-# MODI — Nintendo Switch 2 Model & Screen Identifier
+# MODI Nintendo Switch 2 Screen Identifier — Community Research
 
 ![MODI Diagnostic Lab](assets/modi-logo.svg)
 
-[Wersja polska](https://modyfikatorcasper.github.io/modi-switch2-identifier/?lang=pl) · [English](https://modyfikatorcasper.github.io/modi-switch2-identifier/?lang=en) · [GitHub](https://github.com/modyfikatorcasper/modi-switch2-identifier) · [Branding / Identyfikacja](docs/BRANDING.md)
+[Wersja polska](https://modyfikatorcasper.github.io/modi-switch2-identifier/?lang=pl) · [English](https://modyfikatorcasper.github.io/modi-switch2-identifier/?lang=en) · [GitHub](https://github.com/modyfikatorcasper/modi-switch2-identifier) · [MODI Diagnostic Lab / Research](https://modyfikatorcasper.github.io/#research) · [Branding / Identyfikacja](docs/BRANDING.md)
 
-**Modyfikator / Modibox · tylko Nintendo Switch 2 / Nintendo Switch 2 only**
+**Modyfikator89 · tylko Nintendo Switch 2 / Nintendo Switch 2 only**
 
-Statyczna, dwujęzyczna baza obserwacji i narzędzie do lokalnego sprawdzania numeru. Nie ustalono reguły pozwalającej identyfikować ekran z numeru seryjnego. / A static bilingual observation database with local serial lookup. No serial-to-display identification rule has been established.
+Społecznościowy projekt badawczy ekranów Nintendo Switch 2: statyczna, dwujęzyczna baza obserwacji i lokalne sprawdzanie numeru. Nie ustalono reguły pozwalającej identyfikować ekran z numeru seryjnego. / A community screen research project for Nintendo Switch 2: a static bilingual observation database with local serial lookup. No serial-to-display identification rule has been established.
 
 The interface supports shareable `?lang=pl` and `?lang=en` language links. Only the language is written to the URL; serial input remains local. / Interfejs obsługuje linki `?lang=pl` i `?lang=en`. Do adresu trafia tylko język, nigdy wpisany numer.
 
@@ -46,7 +46,7 @@ Wynik `dist/` można też opublikować na dowolnym statycznym hostingu. Ścieżk
 ### Co jest gotowe
 
 - Wyszukiwarka pełnych i zamaskowanych numerów oraz prefiksów. HA/HL określa wyłącznie konstrukcję baterii według źródła Nintendo.
-- Dwa ostrożne rekordy Modibox: `HLE400924****` i `HAE109492****`. Żaden nie ma oznaczenia panelu potwierdzonego zdjęciem. Nie dostarczono zdjęć powiązanych z tymi egzemplarzami.
+- Dwa ostrożne rekordy Modyfikator89: `HLE400924****` i `HAE109492****`. Żaden nie ma oznaczenia panelu potwierdzonego zdjęciem. Nie dostarczono zdjęć powiązanych z tymi egzemplarzami.
 - Sześć filtrów bazy: prefiks, panel, bateria, kraj, dowody i historia części. CSV obejmuje aktualnie przefiltrowane rekordy; JSON udostępnia cały zbiór. Build generuje także `dist/data/observations.csv`.
 - Poradnik, katalog trzech oznaczeń, jawne źródła i statusy. Zdjęcia referencyjne można wczytać z zewnętrznego źródła lub otworzyć osobno. Nie stanowią dowodów dla rekordów startowych. Ich kopie nie są dołączone do projektu; linki mogą przestać działać. Kod i dane strony nie wymagają ich dostępności.
 - Kompletny lokalny formularz, podgląd szkicu, pobieranie JSON i przekazanie zamaskowanych pól do GitHub Issue Forms PL/EN. Zgłoszenie publikuje sam użytkownik, po sprawdzeniu formularza GitHub. Konto GitHub jest wymagane do wysłania Issue.
@@ -54,7 +54,7 @@ Wynik `dist/` można też opublikować na dowolnym statycznym hostingu. Ścieżk
 
 ### Granice wiedzy i prywatność
 
-Nie wykazano związku zakresu numerów z modelem ekranu. HLE z ekranem o pierwotnej konstrukcji jest obserwacją serwisową, a nie potwierdzeniem kodu `ZD079KA-03A`. Dla HAE nie przypisano nieudostępnionych zdjęć ani cech. Nierozstrzygnięty opis skrzydełek nie służy jako reguła producenta. Oferta części nie dowodzi montażu fabrycznego ani poprawy parametrów. Nie mamy jeszcze własnych testów porównawczych ani zweryfikowanych wyników dla zgłoszonego wariantu.
+Nie wykazano związku zakresu numerów z modelem ekranu. Modyfikator89 zgłasza ten sam rodzaj ekranu o pierwotnej konstrukcji dla obu numerów HLE i HAE, opisując parę jako V1/V2. To obserwacja serwisowa, a nie potwierdzenie kodu `ZD079KA-03A`; żadnemu rekordowi nie przypisano niedostarczonych zdjęć ani cech taśmy. Nierozstrzygnięty opis skrzydełek nie służy jako reguła producenta. Oferta części nie dowodzi montażu fabrycznego ani poprawy parametrów. Nie mamy jeszcze własnych testów porównawczych ani zweryfikowanych wyników dla zgłoszonego wariantu.
 
 Pełny numer wpisany w wyszukiwarkę pozostaje w pamięci przeglądarki i po sprawdzeniu jest zastępowany maską. Nie jest wpisywany do URL, storage ani analityki. Nie ma analityki, zewnętrznych fontów ani backendu. Żądania JSON idą wyłącznie do hosta strony. Zewnętrzne zdjęcia są pobierane dopiero po kliknięciu i bez `Referer`. GitHub otrzymuje szkic wyłącznie po świadomym otwarciu linku przez użytkownika; ten link zawiera już maskę. Eksport CSV zabezpiecza tekst przed interpretacją jako formuły w arkuszu.
 
@@ -112,7 +112,7 @@ The website offers dropdowns. Their selected values transfer to matching text fi
 
 ### Evidence and operation
 
-HA/HL lookup concerns battery construction only. The two seed records are author-supplied Modibox observations, with no linked photos or confirmed panel markings. The HLE record describes an **original-style assembly, panel marking unverified**. The HAE record has no unit-linked display description. Neither record is assigned a catalogue model without evidence.
+HA/HL lookup concerns battery construction only. The two seed records are author-supplied Modyfikator89 observations, with no linked photos or confirmed panel markings. The author describes the pair as V1/V2 and reports the same **original-style assembly, panel marking unverified** in both records. Neither record is assigned a catalogue model without evidence.
 
 The database offers six composable filters, filtered CSV export and full JSON download. The guide compares externally linked reference parts photos, separately from the seed reports. These photos require an explicit load click and may become unavailable; they are not bundled or covered by the code license. Wings remain unresolved as a manufacturer indicator. Seller “V1/V2” labels are distinct from console revisions. Compatibility and performance are not established here. We do not yet have our own comparative tests or verified results for the reported variant. The two LS… markings remain separate catalogue entries.
 
