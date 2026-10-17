@@ -1,0 +1,29 @@
+[
+  {
+    "id": "ZD079KA-03A",
+    "assemblyAttribution": "Innolux",
+    "status": "reference-photo-documented",
+    "sourceIds": ["npw-panels"],
+    "description": {"pl": "Moduł premierowy, opisywany jako montowany przez Innolux. Zdjęcie referencyjne pokazuje oznaczenie; nie potwierdza panelu w naszych rekordach startowych.", "en": "Launch assembly, described as assembled by Innolux. The reference photo shows its marking; it does not confirm the panel in our seed reports."},
+    "retailInstallInOurData": false,
+    "measuredParameters": null
+  },
+  {
+    "id": "LS079T1SX10P",
+    "assemblyAttribution": "Sharp (attributed)",
+    "status": "parts-listing-reference",
+    "sourceIds": ["npw-panels"],
+    "description": {"pl": "Odmienny moduł przypisywany Sharpowi, pokazany w materiale o ofertach części. Oferta nie potwierdza montażu w konsoli sklepowej ani lepszych parametrów.", "en": "A different assembly attributed to Sharp, pictured in a parts-market report. A listing does not establish retail installation or better performance."},
+    "retailInstallInOurData": false,
+    "measuredParameters": null
+  },
+  {
+    "id": "LS0DAS7081",
+    "assemblyAttribution": "Sharp (attributed)",
+    "status": "reported-marking-unverified",
+    "sourceIds": ["npw-ls0"],
+    "description": {"pl": "Oznaczenie zgłoszone przez obserwatora ofert części; możliwa próbka inżynieryjna. Brak własnego zdjęcia i weryfikacji. Nie utożsamiamy parametrów z LS079T1SX10P.", "en": "Marking reported by a parts-market observer; possibly an engineering sample. No project photo or independent verification. Parameters are not equated with LS079T1SX10P."},
+    "retailInstallInOurData": false,
+    "measuredParameters": null
+  }
+]

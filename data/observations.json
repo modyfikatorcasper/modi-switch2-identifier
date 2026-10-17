@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-17",
+  "reports": [
+    {
+      "id": "MODI-0001",
+      "serialFragment": "HLE400924",
+      "serialMasked": "HLE400924****",
+      "sourceIds": ["modibox-seed"],
+      "issueUrl": null,
+      "consoleModel": null,
+      "printCode": null,
+      "country": null,
+      "purchaseMonth": null,
+      "bundle": null,
+      "batteryObserved": "unknown",
+      "panelModel": null,
+      "assemblyStyle": "original-style",
+      "evidenceStatuses": ["unverified", "screen-unknown"],
+      "screenHistory": "unknown",
+      "boardHistory": "unknown",
+      "features": {"wideRibbonPrint": "unknown", "leftWing": "unresolved", "rightWing": "unresolved", "ribbonTip": null, "smallConnector": null, "underBoardRoute": null},
+      "evidence": [],
+      "duplicateReview": "not-reviewed",
+      "notes": {"pl": "Modibox opisuje ekran o pierwotnej konstrukcji w egzemplarzu HLE. original-style assembly, panel marking unverified. Bez zdjęć nie potwierdzamy modelu ani cech taśmy. Konstrukcja baterii wynika z prefiksu, nie z oględzin tego rekordu.", "en": "Modibox reports an original-style screen in an HLE unit. original-style assembly, panel marking unverified. No photos confirm the panel model or ribbon features. Battery construction is prefix-derived, not inspected for this report."}
+    },
+    {
+      "id": "MODI-0002",
+      "serialFragment": "HAE109492",
+      "serialMasked": "HAE109492****",
+      "sourceIds": ["modibox-seed"],
+      "issueUrl": null,
+      "consoleModel": null,
+      "printCode": null,
+      "country": null,
+      "purchaseMonth": null,
+      "bundle": null,
+      "batteryObserved": "unknown",
+      "panelModel": null,
+      "assemblyStyle": "unknown",
+      "evidenceStatuses": ["unverified", "screen-unknown"],
+      "screenHistory": "unknown",
+      "boardHistory": "unknown",
+      "features": {"wideRibbonPrint": "unknown", "leftWing": "unresolved", "rightWing": "unresolved", "ribbonTip": null, "smallConnector": null, "underBoardRoute": null},
+      "evidence": [],
+      "duplicateReview": "not-reviewed",
+      "notes": {"pl": "Przekazany fragment numeru. Nie dostarczono przypisanych temu egzemplarzowi zdjęć ani jednoznacznego opisu ekranu. Model panelu, cechy konstrukcyjne i historia części pozostają nieznane.", "en": "Supplied serial fragment. No photos or unambiguous display description were linked to this unit. Panel model, construction features and parts history remain unknown."}
+    }
+  ]
+}

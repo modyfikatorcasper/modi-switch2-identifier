@@ -1,0 +1,180 @@
+name: "Report a Nintendo Switch 2 observation"
+description: "Owner or technician report. Verification is manual."
+title: "[Report] "
+body:
+  - type: markdown
+    attributes:
+      value: "## MODI / Modyfikator / Modibox\nNintendo Switch 2 only. This report will be public. Never include a full serial. Do not open a working console solely to report. Submitting an Issue does not automatically add a database record."
+  - type: input
+    id: serial
+    attributes:
+      label: "Serial fragment"
+      description: "Only 3 letters + 6 digits, optionally ****. Never the full serial."
+    validations:
+      required: true
+  - type: input
+    id: console_model
+    attributes:
+      label: "Console model"
+      description: "If available, e.g. BEE-001."
+    validations:
+      required: false
+  - type: input
+    id: print_code
+    attributes:
+      label: "Print code"
+      description: "If available."
+    validations:
+      required: false
+  - type: input
+    id: country
+    attributes:
+      label: "Purchase country"
+      description: "Country, or “unknown”."
+    validations:
+      required: true
+  - type: input
+    id: purchase_month
+    attributes:
+      label: "Approximate purchase date"
+      description: "YYYY-MM or an approximation; do not guess."
+    validations:
+      required: false
+  - type: input
+    id: bundle
+    attributes:
+      label: "Bundle"
+    validations:
+      required: false
+  - type: dropdown
+    id: battery
+    attributes:
+      label: "Battery construction — inspection"
+      description: "unknown; earlier = physically confirmed earlier construction; user-replaceable = physically confirmed user-replaceable construction. A prefix inference is not an inspection."
+      options:
+        - "unknown"
+        - "earlier"
+        - "user-replaceable"
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: panel
+    attributes:
+      label: "Panel marking"
+      description: "unread = not read; other = specify in notes. A marking is unconfirmed without a legible photo."
+      options:
+        - "unread"
+        - "ZD079KA-03A"
+        - "LS079T1SX10P"
+        - "LS0DAS7081"
+        - "other"
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: ribbon_print
+    attributes:
+      label: "Wide ribbon print"
+      description: "Use only what you can document."
+      options:
+        - "unknown"
+        - "present"
+        - "absent"
+        - "unreadable"
+        - "unresolved"
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: left_wing
+    attributes:
+      label: "Left wing"
+      description: "Back of module, marking upright. This feature does not identify the manufacturer."
+      options:
+        - "unknown"
+        - "present"
+        - "absent"
+        - "unresolved"
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: right_wing
+    attributes:
+      label: "Right wing"
+      description: "Same orientation as for the left wing."
+      options:
+        - "unknown"
+        - "present"
+        - "absent"
+        - "unresolved"
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: ribbon_tip
+    attributes:
+      label: "Ribbon tip shape"
+      description: "Description, or unknown."
+    validations:
+      required: false
+  - type: input
+    id: small_connector
+    attributes:
+      label: "Small connector position and orientation"
+      description: "Description, or unknown."
+    validations:
+      required: false
+  - type: input
+    id: under_board
+    attributes:
+      label: "Ribbon routing under the board"
+      description: "Only if visible during service. Do not open a working console solely to report."
+    validations:
+      required: false
+  - type: dropdown
+    id: screen_history
+    attributes:
+      label: "Screen history"
+      description: "unknown = history unknown; factory = factory-installed; replaced = replaced."
+      options:
+        - "unknown"
+        - "factory"
+        - "replaced"
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: board_history
+    attributes:
+      label: "Motherboard history"
+      description: "unknown = history unknown; factory = factory-installed; replaced = replaced."
+      options:
+        - "unknown"
+        - "factory"
+        - "replaced"
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "Photos or evidence links"
+      description: "Optional. Attach photos or provide links. Mask serial suffixes, QR codes and personal data. Link marking and geometry photos to the same unit. No internal evidence = display unknown."
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Notes / related reports"
+      description: "Include other markings, uncertainties and any earlier report for this console. A matching fragment does not establish the same unit."
+    validations:
+      required: false
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: "Privacy and report status"
+      options:
+        - label: "I understand this report is public. I have masked serials in photos and removed personal data. Verification is not automatic."
+          required: true

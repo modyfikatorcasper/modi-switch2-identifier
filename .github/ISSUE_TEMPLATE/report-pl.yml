@@ -1,0 +1,180 @@
+name: "Dodaj obserwację Nintendo Switch 2"
+description: "Zgłoszenie właściciela lub serwisanta. Weryfikacja jest ręczna."
+title: "[Report] "
+body:
+  - type: markdown
+    attributes:
+      value: "## MODI / Modyfikator / Modibox\nTylko Nintendo Switch 2. To zgłoszenie będzie publiczne. Nie podawaj pełnego numeru. Nie rozbieraj sprawnej konsoli wyłącznie dla zgłoszenia. Wysłanie Issue nie dodaje automatycznie rekordu do bazy."
+  - type: input
+    id: serial
+    attributes:
+      label: "Fragment numeru"
+      description: "Tylko 3 litery + 6 cyfr, opcjonalnie ****. Nigdy pełny numer."
+    validations:
+      required: true
+  - type: input
+    id: console_model
+    attributes:
+      label: "Model konsoli"
+      description: "Jeśli dostępny, np. BEE-001."
+    validations:
+      required: false
+  - type: input
+    id: print_code
+    attributes:
+      label: "Kod nadruku"
+      description: "Jeśli dostępny."
+    validations:
+      required: false
+  - type: input
+    id: country
+    attributes:
+      label: "Kraj zakupu"
+      description: "Podaj kraj lub „nieustalony”."
+    validations:
+      required: true
+  - type: input
+    id: purchase_month
+    attributes:
+      label: "Przybliżona data zakupu"
+      description: "RRRR-MM lub przybliżenie; nie zgaduj."
+    validations:
+      required: false
+  - type: input
+    id: bundle
+    attributes:
+      label: "Zestaw / bundle"
+    validations:
+      required: false
+  - type: dropdown
+    id: battery
+    attributes:
+      label: "Konstrukcja baterii — oględziny"
+      description: "unknown = nieustalona; earlier = potwierdzona wcześniejsza; user-replaceable = potwierdzona wymieniana przez użytkownika. Nie przepisuj wniosku z prefiksu jako oględzin."
+      options:
+        - "unknown"
+        - "earlier"
+        - "user-replaceable"
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: panel
+    attributes:
+      label: "Oznaczenie panelu"
+      description: "unread = nieodczytane; other = inne, wpisz w uwagach. Bez czytelnego zdjęcia oznaczenie pozostaje niepotwierdzone."
+      options:
+        - "unread"
+        - "ZD079KA-03A"
+        - "LS079T1SX10P"
+        - "LS0DAS7081"
+        - "other"
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: ribbon_print
+    attributes:
+      label: "Nadruk na szerokiej taśmie"
+      description: "unknown = nieustalone; present = obecny; absent = brak; unreadable = nieczytelny; unresolved = nierozstrzygnięte."
+      options:
+        - "unknown"
+        - "present"
+        - "absent"
+        - "unreadable"
+        - "unresolved"
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: left_wing
+    attributes:
+      label: "Lewe skrzydełko"
+      description: "Tył modułu, oznaczenie ustawione czytelnie. present = obecne; absent = brak; unknown = nieustalone; unresolved = nierozstrzygnięte. Ta cecha nie identyfikuje producenta."
+      options:
+        - "unknown"
+        - "present"
+        - "absent"
+        - "unresolved"
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: right_wing
+    attributes:
+      label: "Prawe skrzydełko"
+      description: "Ta sama orientacja co przy lewym skrzydełku."
+      options:
+        - "unknown"
+        - "present"
+        - "absent"
+        - "unresolved"
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: ribbon_tip
+    attributes:
+      label: "Kształt końcówki taśmy"
+      description: "Opis lub nieustalony."
+    validations:
+      required: false
+  - type: input
+    id: small_connector
+    attributes:
+      label: "Położenie i orientacja małego złącza"
+      description: "Opis lub nieustalone."
+    validations:
+      required: false
+  - type: input
+    id: under_board
+    attributes:
+      label: "Przebieg taśmy pod płytą"
+      description: "Tylko jeśli widoczny podczas serwisu. Nie rozbieraj sprawnej konsoli wyłącznie dla zgłoszenia."
+    validations:
+      required: false
+  - type: dropdown
+    id: screen_history
+    attributes:
+      label: "Historia ekranu"
+      description: "unknown = historia nieznana; factory = fabryczny; replaced = wymieniony."
+      options:
+        - "unknown"
+        - "factory"
+        - "replaced"
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: board_history
+    attributes:
+      label: "Historia płyty"
+      description: "unknown = historia nieznana; factory = fabryczna; replaced = wymieniona."
+      options:
+        - "unknown"
+        - "factory"
+        - "replaced"
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "Zdjęcia lub linki do dowodów"
+      description: "Opcjonalne. Dołącz zdjęcia tutaj lub podaj linki. Zamaskuj końcówki numerów, kody QR i dane osobowe. Zwiąż zdjęcie oznaczenia i geometrii z tym samym egzemplarzem. Brak zdjęć wnętrza = ekran nieznany."
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Uwagi / powiązane zgłoszenia"
+      description: "Podaj inne oznaczenie, niepewności i link do wcześniejszego zgłoszenia tej konsoli. Ten sam fragment numeru nie oznacza tego samego egzemplarza."
+    validations:
+      required: false
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: "Prywatność i status zgłoszenia"
+      options:
+        - label: "Rozumiem, że zgłoszenie jest publiczne. Zamaskowałem numery na zdjęciach i usunąłem dane osobowe. Weryfikacja nie jest automatyczna."
+          required: true

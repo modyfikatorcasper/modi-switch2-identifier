@@ -1,0 +1,20 @@
+[
+  {
+    "id": "launch-detail",
+    "panelId": "ZD079KA-03A",
+    "url": "https://ninpatentswatch.com/wp-content/uploads/2026/06/bsky-3mpgynym2ok2k-p1-m4.webp",
+    "sourceIds": ["npw-panels"],
+    "credit": "iPartsBuy, reproduced by Nintendo Patents Watch",
+    "rights": "Third-party reference; linked remotely, not included under the code license.",
+    "observed": {"pl": "Widoczny nadruk na szerokiej taśmie; małe złącze przy wąskim odcinku. Zdjęcie jest obrócone względem drugiego ujęcia.", "en": "Print visible on the wide ribbon; small connector on a narrow section. This image is rotated relative to the other view."}
+  },
+  {
+    "id": "ls-detail",
+    "panelId": "LS079T1SX10P",
+    "url": "https://ninpatentswatch.com/wp-content/uploads/2026/06/bsky-3mpgynym2ok2k-p1-m3.webp",
+    "sourceIds": ["npw-panels"],
+    "credit": "Parts-listing photo; original seller redacted by Nintendo Patents Watch",
+    "rights": "Third-party reference; linked remotely, not included under the code license.",
+    "observed": {"pl": "Brak nadruku na odsłoniętej szerokiej końcówce; inne rozmieszczenie małego złącza i obwodów. Oznaczenie widoczne na tyle modułu.", "en": "No print on the exposed wide ribbon tip; different small-connector and circuit layout. Marking visible on the module back."}
+  }
+]

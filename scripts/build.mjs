@@ -1,0 +1,16 @@
+import {mkdir,cp,readFile,writeFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+import {toCSV} from '../assets/core.js';
+const root=fileURLToPath(new URL('..',import.meta.url));
+const out=path.join(root,'dist');
+await mkdir(out,{recursive:true});
+for(const entry of ['index.html','.nojekyll','assets','data','docs','README.md','LICENSE']) await cp(path.join(root,entry),path.join(out,entry),{recursive:true});
+const config=JSON.parse(await readFile(path.join(root,'data/config.json'),'utf8'));
+if(process.env.GITHUB_REPOSITORY)config.githubRepository=process.env.GITHUB_REPOSITORY;
+await writeFile(path.join(out,'data/config.json'),JSON.stringify(config,null,2)+'\n');
+const observations=JSON.parse(await readFile(path.join(root,'data/observations.json'),'utf8'));
+const rules=JSON.parse(await readFile(path.join(root,'data/rules.json'),'utf8'));
+await writeFile(path.join(out,'data/observations.csv'),toCSV(observations.reports,rules),'utf8');
+console.log('Static site built: '+out);
+console.log('GitHub repository: '+(config.githubRepository || '(auto-detected on github.io; configure for custom domains)'));

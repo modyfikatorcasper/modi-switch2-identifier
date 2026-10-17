@@ -1,0 +1,11 @@
+/* Shared MODI lockup, matching modyfikatorcasper/modi-jb-checker. */
+a.modi-brand{display:inline-flex;align-items:center;gap:13px;color:var(--text);font:800 18px/1.2 var(--font);letter-spacing:.1em;text-decoration:none;flex-shrink:0}
+.modi-brand .brand-mark{display:flex;align-items:center;justify-content:center;width:43px;height:43px;border:1px solid var(--accent);color:var(--accent);font:700 23px var(--mono);letter-spacing:-3px}
+.brand-mark span{font-weight:400}
+.modi-brand .brand-lab{display:block;font:500 10px/1.2 var(--font);letter-spacing:.15em;color:var(--muted);margin-top:5px}
+.footer a.modi-brand{font-size:16px;flex-wrap:wrap;gap:10px}
+.footer .brand-mark{width:35px;height:35px;font-size:20px}
+.footer .brand-lab{font-size:8px}
+.project-links{display:flex;gap:16px;flex-wrap:wrap;font-size:10px}
+.footer .footer-authors{font-size:10px;letter-spacing:0;color:var(--muted);font-weight:400;margin-left:7px}
+@media(max-width:760px){a.modi-brand{font-size:16px;gap:10px}.modi-brand .brand-mark{width:36px;height:36px;font-size:21px}.modi-brand .brand-lab{font-size:8px}.footer .project-links{width:100%;font-size:10px}.footer a.modi-brand{width:100%}}

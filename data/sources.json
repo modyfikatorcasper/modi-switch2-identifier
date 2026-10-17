@@ -1,0 +1,38 @@
+[
+  {
+    "id": "nintendo-battery",
+    "title": "Nintendo — battery construction / construction de la batterie",
+    "url": "https://www.nintendo.com/fr-fr/Assistance/Depannage/Battery-replacement/Comment-verifier-si-votre-console-Nintendo-Switch-2-contient-une-batterie-amovible-3212762.html",
+    "kind": "manufacturer-support",
+    "accessedAt": "2026-10-17"
+  },
+  {
+    "id": "npw-panels",
+    "title": "Nintendo Patents Watch — New Sharp-Assembled Switch 2 LCD Panel in the Wild",
+    "url": "https://ninpatentswatch.com/2026/06/29/new-sharp-assembled-switch-2-lcd-panel-in-the-wild/",
+    "kind": "first-hand-parts-listing-observation",
+    "accessedAt": "2026-10-17"
+  },
+  {
+    "id": "npw-ls0",
+    "title": "Nintendo Patents Watch — LS0DAS7081 observation, 2026-08-30",
+    "url": "https://bsky.app/profile/ninpatentswatch.bsky.social/post/3mubr6n5ckk2h",
+    "kind": "first-hand-parts-listing-observation",
+    "accessedAt": "2026-10-17"
+  },
+  {
+    "id": "gbatemp-serials",
+    "title": "GBAtemp — Nintendo Switch 2 Serial Number Database",
+    "url": "https://gbatemp.net/threads/nintendo-switch-2-serial-number-database.673146/",
+    "kind": "community-context-only",
+    "accessedAt": "2026-10-17"
+  },
+  {
+    "id": "modibox-seed",
+    "title": "Modibox / obserwacja serwisowa",
+    "url": null,
+    "kind": "user-provided-service-observation",
+    "accessedAt": "2026-10-17",
+    "note": {"pl": "Dane przekazane przez autora projektu. Brak dołączonych zdjęć, daty serwisu i publicznego odnośnika.", "en": "Project author's supplied observations. No photos, service date or public permalink were supplied."}
+  }
+]
