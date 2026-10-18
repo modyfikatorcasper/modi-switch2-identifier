@@ -9,3 +9,14 @@ a.modi-brand{display:inline-flex;align-items:center;gap:13px;color:var(--text);f
 .project-links{display:flex;gap:16px;flex-wrap:wrap;font-size:10px}
 .footer .footer-authors{font-size:10px;letter-spacing:0;color:var(--muted);font-weight:400;margin-left:7px}
 @media(max-width:760px){a.modi-brand{font-size:16px;gap:10px}.modi-brand .brand-mark{width:36px;height:36px;font-size:21px}.modi-brand .brand-lab{font-size:8px}.footer .project-links{width:100%;font-size:10px}.footer a.modi-brand{width:100%}}
+
+/* Compact project navigation, available above the main content on mobile too. */
+.project-switcher{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px;border-bottom:1px solid var(--line);font-size:12px}
+.project-switcher>a{color:var(--accent)}
+.project-switcher details{position:relative}
+.project-switcher summary{cursor:pointer;padding:8px 0;min-height:40px}
+.project-switcher nav{position:absolute;right:0;top:100%;z-index:20;display:grid;gap:0;min-width:260px;padding:8px;background:var(--bg);border:1px solid var(--line);border-radius:8px;box-shadow:0 12px 30px #0008}
+.project-switcher nav a{padding:12px;border-radius:4px}
+.project-switcher nav a:hover{background:#202820}
+.footer .project-links{font-size:12px;line-height:1.7;gap:10px 20px}
+@media(max-width:400px){.project-switcher{font-size:11px;gap:8px}.project-switcher nav{min-width:245px}}
